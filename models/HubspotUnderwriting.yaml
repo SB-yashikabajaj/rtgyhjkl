@@ -1,0 +1,109 @@
+title: HubspotUnderwriting
+x-stoplight:
+  id: k1cm9xllc0fy9
+type: object
+description: Fields to be written from Flex to the Hubspot Underwriting Entity
+properties:
+  id:
+    type: string
+    x-stoplight:
+      id: lft7k9an90xie
+  bankingApplicationStatus:
+    type: string
+    x-stoplight:
+      id: 4xvz7llanv1ng
+    enum:
+      - unused
+      - incomplete
+      - pending
+      - approved
+      - denied
+  creditApplicationStatus:
+    type: string
+    x-stoplight:
+      id: hkmo05i0gq1at
+    enum:
+      - unused
+      - incomplete
+      - pending
+      - approved
+      - denied
+  userType:
+    type: string
+    x-stoplight:
+      id: ttvccq6smvran
+    enum:
+      - employee
+      - owner
+      - accountant
+      - auditor
+      - admin
+  flexUserId:
+    type: string
+    x-stoplight:
+      id: d5bee503e34o3
+    format: uuid
+  flexCompanyId:
+    type: string
+    x-stoplight:
+      id: 627404bjjnqd3
+    format: uuid
+  bankingApplicant:
+    type: string
+    x-stoplight:
+      id: mr79yf44f45mb
+    enum:
+      - 'yes'
+      - 'no'
+  creditApplicant:
+    type: string
+    x-stoplight:
+      id: a3ao1f9y2z6hs
+    enum:
+      - 'yes'
+      - 'no'
+  ficoBand:
+    type: string
+    x-stoplight:
+      id: 3opuf2hp4xc8k
+    enum:
+      - NOT_PROCESSED_YET
+      - super_prime
+      - prime
+      - near_prime
+      - subprime
+  ficoStatus:
+    type: string
+    x-stoplight:
+      id: j9ib7w0osjj7n
+    enum:
+      - frozen
+      - unfrozen
+  kycPassed:
+    type: boolean
+    x-stoplight:
+      id: uovgs9helwuu3
+  kycPassedDate:
+    type: string
+    x-stoplight:
+      id: ttsmtr3pkds1s
+    format: date-time
+  creditLimit:
+    type: number
+    x-stoplight:
+      id: wij8t6xdwl6qj
+  lithicId:
+    type: string
+    x-stoplight:
+      id: cmudso0304hhe
+    format: uuid
+  unitId:
+    type: string
+    x-stoplight:
+      id: if9x2va2q0we5
+    format: uuid
+  creditLineApproved:
+    type: string
+    x-stoplight:
+      id: l1q2g4bzon9gi
+    format: date-time

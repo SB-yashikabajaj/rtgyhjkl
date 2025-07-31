@@ -1,0 +1,58 @@
+allOf:
+  - type: object
+    properties:
+      id:
+        type: string
+        format: uuid
+        description: The account identifier
+        x-stoplight:
+          id: 0esrgbyygkeqq
+        readOnly: true
+      tenantId:
+        type: string
+        format: uuid
+        description: The tenant identifier
+        readOnly: true
+        x-stoplight:
+          id: 8s1vn4dbd159g
+      active:
+        type: boolean
+        description: A value indicating if the account is enabled in the system
+        x-stoplight:
+          id: qigx9c0enxesx
+      name:
+        type: string
+        description: An optional name for the account
+        maxLength: 100
+        x-stoplight:
+          id: tbwlkr1ehth49
+      incomplete:
+        type: array
+        description: An array of incomplete account details
+        items:
+          type: string
+          x-stoplight:
+            id: eqegb052sit6n
+        readOnly: true
+        x-stoplight:
+          id: ltnrhceuxvshl
+      businessId:
+        type: string
+        x-stoplight:
+          id: yxo3753zc1mx8
+        format: uuid
+        description: The business identifier
+        readOnly: true
+    required:
+      - id
+      - tenantId
+      - active
+    x-stoplight:
+      id: bk8fomauwtfrh
+  - $ref: ./CoreModel.yaml
+    x-stoplight:
+      id: 28lxp3r7glukq
+x-stoplight:
+  id: p8bc4goziz35t
+description: Represents an account
+title: Account

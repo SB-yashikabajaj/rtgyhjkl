@@ -1,0 +1,20 @@
+type: object
+x-stoplight:
+  id: a7u7x9ctaogsl
+properties:
+  value:
+    type: string
+    x-stoplight:
+      id: c442jbexxnwex
+  type:
+    type: string
+    x-stoplight:
+      id: cdgrmmygf4gwb
+  isPrimary:
+    type: boolean
+    x-stoplight:
+      id: i7n3hhn6e3yw1
+  active:
+    type: boolean
+    x-stoplight:
+      id: qy71uninvdk06
